@@ -12,13 +12,6 @@ Using the PAL/SECAM CX-60ME service manual and the TA7698AP datasheet as guides,
 * The absence of the PAL/SECAM colour processing circuitry ... replaced with a tint control.
 * The SKYTEK has a different flyback transformer, with fewer taps on the primary winding.  In particular, the CX-60 derives a +17 V DC supply for the vertical deflection circuit from one of its transformer's primary's taps, whereas the SKYTEK doesn't have that and uses its main regulated 11 V DC supply to power the vertical deflection.  The substantially lower voltage leads to significantly different component values in that part of the circuit.
 
-The Panasonic TH6-X3V uses the same picture tube, but a different all-in-one chip.  Other TVs that I believe are similar, that I found in my search for a schematic, include:
-* Jericho color TV J-210
-* Jaxon CT-105
-* Hitachi C6-GL3
-* National TH6-X300
-* National TH6-X7
-
 ## Power Supply
 
 The TV's DC barrel jack is labelled "12 V".  It was powered by an external unregulated DC power supply labelled an oddly precise 14.7 V at 1.3 A.  The TV was also intended to be powered from an automotive cigarette lighter, so it was basically getting fed about 14 V, unregulated.  Internally, that feeds a linear 11.0 V DC regulator from which everything is powered.  That regulator is precise:  it has a temperature compensated zener reference and a voltage adjust pot.  So the circuit needs a clean, precise, regulated 11.0 V supply.  It would be very convenient if the circuit could run on a (clean, regulated) 12 V supply because that's one of the power supplies the computer already has.
@@ -31,6 +24,17 @@ Most of the circuit is actually powered by a 10 V rail which is derived from the
   - CRT socket board not included.  Will reuse as-is.
   - 11 V regulator circuit not included.  Considering alternatives.
 - [ ] Remove components from PCB, confirm values out-of-circuit.
+  - Confirm internal structure of flyback.
+  - Identify coils, diodes, capacitors.
 - [ ] Select new replacement parts.
 - [ ] Assign footprints.
 - [ ] Layout PCB.
+
+## Other Similar Televisions
+
+The Panasonic TH6-X3V uses the same picture tube, but a different all-in-one chip.  Other TVs that I believe are similar, that I found in my search for a schematic, include:
+* Jericho color TV J-210
+* Jaxon CT-105
+* Hitachi C6-GL3
+* National TH6-X300
+* National TH6-X7
