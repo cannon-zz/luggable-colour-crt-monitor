@@ -392,6 +392,18 @@
 			)
 		)
 		(symbol "Flyback_0_1"
+			(polyline
+				(pts
+					(xy -6.35 -13.97) (xy 6.35 -13.97)
+				)
+				(stroke
+					(width 0)
+					(type dash)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(arc
 				(start -1.27 13.97)
 				(mid -1.6509 13.0809)
@@ -1281,6 +1293,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -16.51 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)

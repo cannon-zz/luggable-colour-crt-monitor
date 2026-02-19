@@ -5441,6 +5441,18 @@
 				)
 			)
 			(symbol "Flyback_0_1"
+				(polyline
+					(pts
+						(xy -6.35 -13.97) (xy 6.35 -13.97)
+					)
+					(stroke
+						(width 0)
+						(type dash)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(arc
 					(start -1.27 13.97)
 					(mid -1.6509 13.0809)
@@ -6330,6 +6342,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -16.51 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -31691,6 +31721,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDPWR")
+		(at 468.63 313.69 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae7989ed-8e13-4e3f-9fdc-3699e8861093")
+		(property "Reference" "#PWR0122"
+			(at 468.63 318.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 468.757 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 468.63 314.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 468.63 314.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 468.63 313.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a192765e-c826-42aa-bcf1-9efef10fdba6")
+		)
+		(instances
+			(project "apple2-luggable-crt"
+				(path "/b139b959-2b3e-49ad-9a77-d02564fe1a08"
+					(reference "#PWR0122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 201.93 96.52 180)
 		(unit 1)
@@ -38574,6 +38671,9 @@
 		)
 		(pin "1"
 			(uuid "0ee67204-8de1-41d8-8185-f4bd6c02d5a2")
+		)
+		(pin "10"
+			(uuid "fbcffe4d-2d36-429d-87dc-677fbc9466d5")
 		)
 		(instances
 			(project ""
