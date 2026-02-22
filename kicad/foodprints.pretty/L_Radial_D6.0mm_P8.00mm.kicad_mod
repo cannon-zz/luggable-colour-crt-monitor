@@ -1,0 +1,211 @@
+(footprint "L_Radial_D6.0mm_P8.00mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Inductor, Radial series, Radial, pin pitch=4.00mm, diameter=6.0mm, height=4.6mm, http://www.abracon.com/Magnetics/radial/AIUR-07.pdf")
+	(tags "Inductor Radial series Radial pin pitch 4.00mm  diameter 6.0mm height 4.6mm")
+	(property "Reference" "REF**"
+		(at 4 -4.25 0)
+		(layer "F.SilkS")
+		(uuid "63c2b9c2-ede0-439e-9639-ab34fb9833d8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Radial_D6.0mm_P8.00mm"
+		(at 4 4.25 0)
+		(layer "F.Fab")
+		(uuid "e3d6f1b8-79a6-4ebe-837e-1511d2db8cc9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7cfbd4e6-9120-4cae-aa1f-fece76cb3f33")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a36343e3-3701-4450-9467-ab61000fd944")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_arc
+		(start 1.14574 -1.26)
+		(mid 4 -3.12)
+		(end 6.85426 -1.26)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "46c14e25-5142-4a49-8aff-bdaab8ac859d")
+	)
+	(fp_arc
+		(start 6.85426 1.26)
+		(mid 4 3.12)
+		(end 1.14574 1.26)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f4d91da0-f9d6-404c-aa66-29750a07abd2")
+	)
+	(fp_line
+		(start 0 -1.414214)
+		(end 0.809375 -1.414215)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "d9210563-2c69-4c23-93de-ae9c771d8aa8")
+	)
+	(fp_line
+		(start 0 1.414214)
+		(end 0.809375 1.414214)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "7dcae55c-5250-4ad9-81ce-92ae0c7b39e7")
+	)
+	(fp_line
+		(start 8 -1.414214)
+		(end 7.190627 -1.414214)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "67685f67-ac1a-4bfb-8bdd-c53edc8ca817")
+	)
+	(fp_line
+		(start 8 1.414214)
+		(end 7.190626 1.414215)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "966581a7-4d1c-449b-b4d5-657442e3dc42")
+	)
+	(fp_arc
+		(start 0 1.414214)
+		(mid -1.414214 0)
+		(end 0 -1.414214)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "28ce1ce1-b69a-4252-b5e0-a0e59286124a")
+	)
+	(fp_arc
+		(start 0.809374 -1.414215)
+		(mid 4.000001 -3.49)
+		(end 7.190627 -1.414214)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "61f25c2f-9a39-4fa3-bf2a-d02b7e11d625")
+	)
+	(fp_arc
+		(start 7.190626 1.414215)
+		(mid 3.999999 3.49)
+		(end 0.809373 1.414214)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "e967a6f2-0bd1-443f-806b-b330d7c6df30")
+	)
+	(fp_arc
+		(start 8 -1.414214)
+		(mid 9.414214 0)
+		(end 8 1.414214)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "ec7f2a8b-b943-4a9b-b39b-b668f32fc79c")
+	)
+	(fp_circle
+		(center 4 0)
+		(end 7 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "251ea8a5-d30d-4bcf-b6c1-e79eb94d2222")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 4 0 0)
+		(layer "F.Fab")
+		(uuid "35ab0ca4-d6de-4743-9064-98cf8eb320ea")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "23f063d2-369f-439f-82b7-7de3de27c2c2")
+	)
+	(pad "2" thru_hole circle
+		(at 8 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e9bf086e-3c1e-4088-a487-0f1025e22144")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Inductor_THT.3dshapes/L_Radial_D6.0mm_P4.00mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

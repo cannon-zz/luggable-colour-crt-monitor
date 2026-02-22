@@ -1,0 +1,228 @@
+(footprint "DelayLine_Sangshin_DL601T"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Murata DSS6, Ceramic Resonator/Filter, length 2.5mm, width 7.0mm, 3 pins, http://cdn-reichelt.de/documents/datenblatt/B400/DSN6NC51H.pdf")
+	(tags "ceramic")
+	(property "Reference" "REF**"
+		(at 2.5 -2.47 0)
+		(layer "F.SilkS")
+		(uuid "d25015d6-39d0-4f64-92c7-33eb2ce9d76b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DelayLine_Sangshin_DL601T"
+		(at 2.5 2.47 0)
+		(layer "F.Fab")
+		(uuid "b984acbd-02af-4a8d-a30b-adc8d96b962e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6d88f51b-47aa-4611-924a-ead37f52ee20")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b52f2bdb-e224-4c59-aaf7-bf60082319ee")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 0.27 -1.38)
+		(end 24.73 -1.38)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "39f227ce-37e6-49c7-bcef-169a86cddfa8")
+	)
+	(fp_line
+		(start 24.73 1.38)
+		(end 0.27 1.38)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "54d8d920-6a47-46c0-b8bd-af265ae4a2ad")
+	)
+	(fp_arc
+		(start 0.27 1.38)
+		(mid -1.11 0)
+		(end 0.27 -1.38)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fd08fdb6-d989-456b-9cf3-eae57c2a377f")
+	)
+	(fp_arc
+		(start 24.73 -1.38)
+		(mid 26.11 0)
+		(end 24.73 1.38)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1ccab3aa-020e-47c7-8a0f-d718117c8c7a")
+	)
+	(fp_line
+		(start 0.27 -1.77)
+		(end 24.73 -1.77)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9ae596d2-5adb-4d7a-8203-8b307bc926cc")
+	)
+	(fp_line
+		(start 24.73 1.77)
+		(end 0.27 1.77)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9a3f127e-6f2b-4872-809e-487c4390850f")
+	)
+	(fp_arc
+		(start 0.27 1.77)
+		(mid -1.5 0)
+		(end 0.27 -1.77)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f70027e4-0485-4d63-9cf3-5662e8116b2e")
+	)
+	(fp_arc
+		(start 24.73 -1.77)
+		(mid 26.5 0)
+		(end 24.73 1.77)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cc21ebb5-5ee0-483f-a486-4bd0b230a5ca")
+	)
+	(fp_line
+		(start 0.27 -1.27)
+		(end 24.73 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b749d5e3-b1f5-460a-a2d6-4278bcc78d6b")
+	)
+	(fp_line
+		(start 24.73 1.27)
+		(end 0.27 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f405538f-6d12-4595-a17f-4efdd599e06b")
+	)
+	(fp_arc
+		(start 0.27 1.27)
+		(mid -1 0)
+		(end 0.27 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "99a98a89-99f6-4bf4-8479-e977bef936e2")
+	)
+	(fp_arc
+		(start 24.73 -1.27)
+		(mid 26 0)
+		(end 24.73 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f91a68da-1796-4775-9dbe-6b071e9e3b35")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.5 0 0)
+		(layer "F.Fab")
+		(uuid "643f7817-8f7a-4dfd-8f66-368f9afd5cb0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.25 2.25)
+		(drill 1.25)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "138e967a-ed86-4872-9cbe-db3d12ed5bd7")
+	)
+	(pad "2" thru_hole circle
+		(at 15 0)
+		(size 2.25 2.25)
+		(drill 1.25)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "eb219df6-0da3-4c15-bf4f-afe046413075")
+	)
+	(pad "3" thru_hole circle
+		(at 25 0)
+		(size 2.25 2.25)
+		(drill 1.25)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3cce430e-0031-4ff1-81b9-d89cb1591ebe")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Crystal.3dshapes/Resonator_Murata_DSS6-3Pin_W7.0mm_H2.5mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
