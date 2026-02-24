@@ -14,6 +14,21 @@ Most of the circuit is actually powered by a 10-ish V rail which is derived from
 
 Oddly, the TA7698AP data sheet recommends a supply voltage of 12 V, and says the minimum operating voltage is 10.8 V, which is *above* the voltage indicated on the VCC pin in the CX-60 schematic (10.6 V).
 
+## Diodes
+
+All diodes specified to be 1SS133 in the CX60 schematic are, here, parts marked "48T" around their barrel, or some cyclic permutation thereof (don't know where the start and end of the sequence are).  I believe they are 1N4148 equivalent.
+
+The diode (D405) used to rectify the 90 V supply for the CRT socket board has burned the PCB.  That's the only place on the PCB with evidence of heat, the only indication of a component that needed to handle more power than it was rated for.  I don't know what the diode is, I can't make heads or tails of the markings on it ("K4K4"), but I want to choose something else.  The diode seems healthy, so my plan is to re-use it, then with it in circuit measure the current and voltage it needs to handle, and replace it with something beefier that doesn't get as hot.
+
+In the CX60 schematic the horizontal pulse signal providing a phase sense feedback from the horizontal fly-back circuit feeds into four portions of the circuit:
+1. a circuit to derive a horizontal blanking signal that gets mixed into the luminance;
+2. the circuit tuning the horizontal oscillator;
+3. the the TDA's h pulse in / gate pulse out pin;
+4. the PAL/SECAM colour processor chip.
+In the CX60, the 3 and 4 circuits share the same initial portions, including a zener diode (D303) to clamp the positive-going pulse amplitude.  A very similar but completely independent circuit is used for 1, which also includes a zener diode (D502) but where that diode creates a DC bias voltage and is not used to clamp the pulse amplitude.  The TV I've got has a nearly identical circuit for 2, and does not have the PAL/SECAM colour processor, and it combines 1 and 3 into a single circuit.  That circuit has basically the same parts as used in 3 above, but instead of a zener diode to clamp the positive-going voltage there is simply another "48T" diode (D402), identical to all the rest on the board.  This is more like the reference circuit in the data sheet, which shows a normal diode in this position.  I don't know what to make of this.  Did the person screw up and put the wrong component into this position, should it have been a zener diode?  Is the reference circuit in error?
+
+I've decided to assume the reference circuit is correct, the diode does not need to clamp the positive-going voltage, and it can be the same as the other small signal diodes in the circuit.
+
 ## Other Similar Televisions
 
 The Panasonic TH6-X3V uses the same picture tube, but a different all-in-one chip.  Other TVs that I believe are similar, that I found in my search for a schematic, include:
