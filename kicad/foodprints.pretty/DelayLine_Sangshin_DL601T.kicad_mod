@@ -6,7 +6,7 @@
 	(descr "Murata DSS6, Ceramic Resonator/Filter, length 2.5mm, width 7.0mm, 3 pins, http://cdn-reichelt.de/documents/datenblatt/B400/DSN6NC51H.pdf")
 	(tags "ceramic")
 	(property "Reference" "REF**"
-		(at 2.5 -2.47 0)
+		(at 2.5 -4.5 0)
 		(layer "F.SilkS")
 		(uuid "d25015d6-39d0-4f64-92c7-33eb2ce9d76b")
 		(effects
@@ -53,8 +53,8 @@
 	)
 	(attr through_hole)
 	(fp_line
-		(start 0.27 -1.38)
-		(end 24.73 -1.38)
+		(start 0 -3.5)
+		(end 25 -3.5)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -63,8 +63,8 @@
 		(uuid "39f227ce-37e6-49c7-bcef-169a86cddfa8")
 	)
 	(fp_line
-		(start 24.73 1.38)
-		(end 0.27 1.38)
+		(start 25 3.5)
+		(end 0 3.5)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -73,9 +73,9 @@
 		(uuid "54d8d920-6a47-46c0-b8bd-af265ae4a2ad")
 	)
 	(fp_arc
-		(start 0.27 1.38)
-		(mid -1.11 0)
-		(end 0.27 -1.38)
+		(start 0 3.499999)
+		(mid -2.829454 0)
+		(end -0.000001 -3.499999)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -84,9 +84,9 @@
 		(uuid "fd08fdb6-d989-456b-9cf3-eae57c2a377f")
 	)
 	(fp_arc
-		(start 24.73 -1.38)
-		(mid 26.11 0)
-		(end 24.73 1.38)
+		(start 25.000001 -3.5)
+		(mid 27.829455 0)
+		(end 25 3.5)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -95,8 +95,8 @@
 		(uuid "1ccab3aa-020e-47c7-8a0f-d718117c8c7a")
 	)
 	(fp_line
-		(start 0.27 -1.77)
-		(end 24.73 -1.77)
+		(start 0 -3.75)
+		(end 25 -3.75)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -105,8 +105,8 @@
 		(uuid "9ae596d2-5adb-4d7a-8203-8b307bc926cc")
 	)
 	(fp_line
-		(start 24.73 1.77)
-		(end 0.27 1.77)
+		(start 25 3.75)
+		(end 0 3.75)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -115,9 +115,9 @@
 		(uuid "9a3f127e-6f2b-4872-809e-487c4390850f")
 	)
 	(fp_arc
-		(start 0.27 1.77)
-		(mid -1.5 0)
-		(end 0.27 -1.77)
+		(start 0 3.75)
+		(mid -3.074265 0)
+		(end 0 -3.75)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -126,9 +126,9 @@
 		(uuid "f70027e4-0485-4d63-9cf3-5662e8116b2e")
 	)
 	(fp_arc
-		(start 24.73 -1.77)
-		(mid 26.5 0)
-		(end 24.73 1.77)
+		(start 25 -3.75)
+		(mid 28.074265 0)
+		(end 25 3.75)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -137,8 +137,8 @@
 		(uuid "cc21ebb5-5ee0-483f-a486-4bd0b230a5ca")
 	)
 	(fp_line
-		(start 0.27 -1.27)
-		(end 24.73 -1.27)
+		(start 0 -3.25)
+		(end 24.999999 -3.25)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -147,8 +147,8 @@
 		(uuid "b749d5e3-b1f5-460a-a2d6-4278bcc78d6b")
 	)
 	(fp_line
-		(start 24.73 1.27)
-		(end 0.27 1.27)
+		(start 24.999999 3.25)
+		(end 0 3.25)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -157,9 +157,9 @@
 		(uuid "f405538f-6d12-4595-a17f-4efdd599e06b")
 	)
 	(fp_arc
-		(start 0.27 1.27)
-		(mid -1 0)
-		(end 0.27 -1.27)
+		(start 0.000001 3.25)
+		(mid -2.585416 0.000001)
+		(end -0.000001 -3.25)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -168,9 +168,9 @@
 		(uuid "99a98a89-99f6-4bf4-8479-e977bef936e2")
 	)
 	(fp_arc
-		(start 24.73 -1.27)
-		(mid 26 0)
-		(end 24.73 1.27)
+		(start 25 -3.25)
+		(mid 27.585416 0)
+		(end 24.999999 3.25)
 		(stroke
 			(width 0.1)
 			(type solid)
