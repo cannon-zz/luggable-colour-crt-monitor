@@ -23,12 +23,20 @@ The diode (D405) used to rectify the 90 V supply for the CRT socket board has bu
 In the CX60 schematic the horizontal pulse signal providing a phase sense feedback from the horizontal fly-back circuit feeds into four portions of the circuit:
 1. a circuit to derive a horizontal blanking signal that gets mixed into the luminance;
 2. the circuit tuning the horizontal oscillator;
-3. the TDA's h pulse in / gate pulse out pin;
+3. the TA7698AP's h pulse in / gate pulse out pin;
 4. the PAL/SECAM colour processor chip.
 
 In the CX60, the 3 and 4 circuits share the same initial portions, including a zener diode (D303) to clamp the positive-going pulse amplitude.  A very similar but completely independent circuit is used for 1, which also includes a zener diode (D502) but where that diode creates a DC bias voltage and is not used to clamp the pulse amplitude.  The TV I've got has a nearly identical circuit for 2, and does not have the PAL/SECAM colour processor, and it combines 1 and 3 into a single circuit.  That circuit has basically the same parts as used in 3 above, but instead of a zener diode to clamp the positive-going voltage there is simply another "48T" diode (D402), identical to all the rest on the board.  This is more like the reference circuit in the data sheet, which shows a normal diode in this position.  I don't know what to make of this.  Did the person screw up and put the wrong component into this position, should it have been a zener diode?  Is the reference circuit in error?
 
 I've decided to assume the reference circuit is correct, the diode does not need to clamp the positive-going voltage, and it can be the same as the other small signal diodes in the circuit.
+
+## Inductors
+
+All of the normal inductors I've managed to measure and document, but there are two that I don't know what to make of.
+
+There is a tunable inductor thingy connected to the TA7698AP'S "burst cleaning" pin, it's marked KRFE204, and the circuit diagrams suggest it's a capacitor and variable inductor in parallel inside a single box.  The package I have has 5 pins, not including the tabs on the shield surrounding it, and only 2 of the 5 are used, the rest are all grounded.  I don't know what its parameters are or what it is exactly.  I'm reusing the one I pulled out of the TV, and will reconnect it the way it was hooked up.  Looking at the chip's block diagram, the various schematics, and considering what the pin description says about it, I /believe/ you're supposed to connect a DC-isolated LC band-reject filter to pin 10 that is tuned to the colour sub-carrier frequency (~3.58 MHz for NTSC) and that shunts everything away from its centre frequency to ground.  The pin description says the LC tank circuit's alignment can be used to shift the phase of the chroma signal w.r.t. the colour burst phase reference.  So ... I think you should look for a 3.58 MHz tunable LC circuit in a can which is to be deliberately mistuned slightly to provide a phase shift and tweak the colours.  I am expecting to adjust it by putting the tint control in the centre, and tweaking the inductor until the colours look right.  There are instructions in the CX60ME manual for adjusting this component (which it calls a transfomer), but I don't yet know if they to this circuit because of the differences in NTSC chroma processing.
+
+There is also a transformer used to drive the hoirzontal output transistor.  Televisions seem to always include such a transformer, I don't really understand why, and so I don't know what this thing's properties are supposed to be.  I'm reusing the one I pulled out of the TV and connecting it up the way I found it.
 
 ## Other Similar Televisions
 
