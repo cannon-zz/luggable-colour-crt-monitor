@@ -38,6 +38,11 @@ There is a tunable inductor thingy connected to the TA7698AP'S "burst cleaning" 
 
 There is also a transformer used to drive the hoirzontal output transistor.  Televisions seem to always include such a transformer, I don't really understand why, and so I don't know what this thing's properties are supposed to be.  I'm reusing the one I pulled out of the TV and connecting it up the way I found it.
 
+## Resistors
+
+- All variable resistors measured consistenly 20% below their marked value.
+- All blue resistors had drifted upwards, all were consistently measured 10% above their marked value.
+
 ## Other Similar Televisions
 
 The Panasonic TH6-X3V uses the same picture tube, but a different all-in-one chip.  Other TVs that I believe are similar, that I found in my search for a schematic, include:

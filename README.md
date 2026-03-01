@@ -9,7 +9,7 @@ This monitor started out as a SKYTEK brand SCT-1024 portable colour television f
 - [X] First pass through the circuit, entering it into kicad.
   - CRT socket board not included.  Will reuse as-is.
   - 11 V regulator circuit not included.  Considering alternatives.
-- [ ] Remove components from PCB, confirm values out-of-circuit.
+- [X] Remove components from PCB, confirm values out-of-circuit.
   - Confirm internal structure of flyback.
   - Identify coils, diodes, capacitors.
 - [ ] Select new replacement parts.
