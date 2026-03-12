@@ -214,15 +214,4 @@
 		(uuid "3cce430e-0031-4ff1-81b9-d89cb1591ebe")
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Crystal.3dshapes/Resonator_Murata_DSS6-3Pin_W7.0mm_H2.5mm.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
 )

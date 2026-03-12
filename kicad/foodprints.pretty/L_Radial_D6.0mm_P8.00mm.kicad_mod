@@ -197,15 +197,4 @@
 		(uuid "e9bf086e-3c1e-4088-a487-0f1025e22144")
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Inductor_THT.3dshapes/L_Radial_D6.0mm_P4.00mm.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
 )

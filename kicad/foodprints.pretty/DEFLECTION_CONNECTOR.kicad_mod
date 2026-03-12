@@ -1,0 +1,204 @@
+(footprint "DEFLECTION_CONNECTOR"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "terminal block MaiXu MX126-5.0-04P, 4 pins, pitch 5mm, size 20.5x7.8mm, drill diameter 1.3mm, pad diameter 2.8mm, https://www.lcsc.com/datasheet/lcsc_datasheet_2309150913_MAX-MX126-5-0-03P-GN01-Cu-S-A_C5188435.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_MaiXu")
+	(tags "THT terminal block MaiXu MX126-5.0-04P pitch 5mm size 20.5x7.8mm drill 1.3mm pad 2.8mm")
+	(property "Reference" "REF**"
+		(at 9 -4 0)
+		(layer "F.SilkS")
+		(uuid "c9357e2c-dad7-4fb1-bfa7-66c316ba5ed1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DEFLECTION_CONNECTOR"
+		(at 9 5.77 0)
+		(layer "F.Fab")
+		(uuid "17da5fe2-7737-4d3d-b6d1-33e4683aea48")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "25db873f-7103-4a83-8894-1a066b7377e4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c21cd95b-68ee-490b-8a2a-5ff214d28a84")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -4.25 -2.25)
+		(end 21.75 -2.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5b8d5b67-63fb-4fca-9b6a-bf83c4ff7355")
+	)
+	(fp_line
+		(start -4.25 2.25)
+		(end -4.25 -2.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3aa0a3cc-6c11-4c45-b2f6-f94c81400793")
+	)
+	(fp_line
+		(start -0.3 2.25)
+		(end -4.25 2.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f13ec8ea-af07-4ba9-8f1f-8f3c72fb6933")
+	)
+	(fp_line
+		(start 21.75 -2.25)
+		(end 21.75 2.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0b2ff25a-e3a1-40bb-9ce4-887d8d1c846f")
+	)
+	(fp_line
+		(start 21.75 2.25)
+		(end 0.3 2.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ca0bb545-e96d-4062-9fc4-1e4a9747d41b")
+	)
+	(fp_poly
+		(pts
+			(xy 0 2.25) (xy 0.44 2.86) (xy -0.44 2.86)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "1e285917-7713-4fe1-ada0-862f049819cc")
+	)
+	(fp_rect
+		(start -4.75 -2.75)
+		(end 22.25 2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "10b63de3-3266-41d2-b9ab-c692d62476c0")
+	)
+	(fp_line
+		(start 1.018 -1.213)
+		(end -1.213 1.018)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a99ded06-713d-4a29-bdbe-94a3193761aa")
+	)
+	(fp_line
+		(start 1.213 -1.018)
+		(end -1.018 1.213)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "770e53f5-1b1d-4203-93fe-6d5c3e62eaa7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 9 3.5 0)
+		(layer "F.Fab")
+		(uuid "55891a5c-6152-4a49-8286-3c8c8aae274c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 4 4)
+		(drill 1.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.089286)
+		(uuid "74a33683-23f7-49db-a834-fb70f23642c5")
+	)
+	(pad "2" thru_hole circle
+		(at 7.5 0)
+		(size 4 4)
+		(drill 1.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "68772a5d-8444-4865-99f1-8ad0650bf0ac")
+	)
+	(pad "3" thru_hole circle
+		(at 12.5 0)
+		(size 4 4)
+		(drill 1.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "68d74248-889f-425e-9322-db4d60e862ce")
+	)
+	(pad "4" thru_hole circle
+		(at 17.5 0)
+		(size 4 4)
+		(drill 1.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "969d23ff-bd54-436c-b20b-331372a21ce6")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/TerminalBlock.3dshapes/TerminalBlock_MaiXu_MX126-5.0-04P_1x04_P5.00mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

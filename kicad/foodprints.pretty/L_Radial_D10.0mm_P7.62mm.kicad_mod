@@ -113,15 +113,4 @@
 		(uuid "64436bc7-1c49-4b9f-be50-7552466b3e44")
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Inductor_THT.3dshapes/L_Radial_D10.0mm_P5.00mm_Fastron_07M.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
 )

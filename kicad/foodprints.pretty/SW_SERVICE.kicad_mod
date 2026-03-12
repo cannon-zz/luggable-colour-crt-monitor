@@ -414,15 +414,4 @@
 		(uuid "907490e3-d9f0-4571-91a2-d53f1f7c9f66")
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_XKB_DM1-16UC-1.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
 )

@@ -1466,9 +1466,6 @@
 		(embedded_fonts no)
 	)
 	(symbol "KRFE204"
-		(pin_numbers
-			(hide yes)
-		)
 		(pin_names
 			(offset 1.016)
 			(hide yes)
@@ -1540,31 +1537,7 @@
 		(symbol "KRFE204_0_1"
 			(polyline
 				(pts
-					(xy -4.064 0.508) (xy -1.016 0.508)
-				)
-				(stroke
-					(width 0.3048)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -4.064 -0.508) (xy -1.016 -0.508)
-				)
-				(stroke
-					(width 0.3302)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 2.54) (xy -2.54 0.508)
+					(xy -4.445 2.54) (xy -4.318 1.651)
 				)
 				(stroke
 					(width 0)
@@ -1576,7 +1549,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 -2.54) (xy -2.54 -0.508)
+					(xy -4.445 2.54) (xy -3.556 2.159)
 				)
 				(stroke
 					(width 0)
@@ -1588,7 +1561,31 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 -1.905) (xy 4.445 2.54)
+					(xy -3.81 0) (xy -5.08 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 -3.81) (xy -3.81 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 2.54) (xy -2.54 2.54)
 				)
 				(stroke
 					(width 0)
@@ -1599,9 +1596,9 @@
 				)
 			)
 			(arc
-				(start 2.54 2.54)
-				(mid 3.1723 1.905)
-				(end 2.54 1.27)
+				(start -2.54 1.27)
+				(mid -3.172 1.905)
+				(end -2.54 2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -1611,9 +1608,9 @@
 				)
 			)
 			(arc
-				(start 2.54 1.27)
-				(mid 3.1723 0.635)
-				(end 2.54 0)
+				(start -2.54 0)
+				(mid -3.172 0.635)
+				(end -2.54 1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -1623,9 +1620,9 @@
 				)
 			)
 			(arc
-				(start 2.54 0)
-				(mid 3.1723 -0.635)
-				(end 2.54 -1.27)
+				(start -2.54 -1.27)
+				(mid -3.172 -0.635)
+				(end -2.54 0)
 				(stroke
 					(width 0)
 					(type default)
@@ -1635,9 +1632,67 @@
 				)
 			)
 			(arc
-				(start 2.54 -1.27)
-				(mid 3.1723 -1.905)
-				(end 2.54 -2.54)
+				(start -2.54 -2.54)
+				(mid -3.172 -1.905)
+				(end -2.54 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.905) (xy -4.445 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 3.81) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 2.54)
+				(radius 0.1053)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 -2.54)
+				(radius 0.1053)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -2.54)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -1660,7 +1715,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 2.54) (xy 2.54 2.54)
+					(xy 2.54 2.54) (xy 2.54 0.508)
 				)
 				(stroke
 					(width 0)
@@ -1684,7 +1739,7 @@
 			)
 			(polyline
 				(pts
-					(xy 4.445 2.54) (xy 3.556 2.159)
+					(xy 2.54 -2.54) (xy 2.54 -0.508)
 				)
 				(stroke
 					(width 0)
@@ -1696,10 +1751,46 @@
 			)
 			(polyline
 				(pts
-					(xy 4.445 2.54) (xy 4.318 1.651)
+					(xy 3.81 2.54) (xy 3.81 3.81)
 				)
 				(stroke
 					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 -3.81) (xy 3.81 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.064 0.508) (xy 1.016 0.508)
+				)
+				(stroke
+					(width 0.3048)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.064 -0.508) (xy 1.016 -0.508)
+				)
+				(stroke
+					(width 0.3302)
 					(type default)
 				)
 				(fill
@@ -1714,14 +1805,50 @@
 				)
 				(stroke
 					(width 0)
-					(type dot)
+					(type dash_dot)
 				)
 				(fill
 					(type none)
 				)
 			)
 			(pin passive line
-				(at 0 5.08 270)
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -3.81 -6.35 90)
+				(length 2.54)
+				(name "SHIELD"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "SHIELD"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 6.35 270)
 				(length 2.54)
 				(name "1"
 					(effects
@@ -1739,16 +1866,52 @@
 				)
 			)
 			(pin passive line
-				(at 0 -5.08 90)
+				(at 0 -6.35 90)
 				(length 2.54)
-				(name "2"
+				(name "3"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 6.35 270)
+				(length 2.54)
+				(name "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 -6.35 90)
+				(length 2.54)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
