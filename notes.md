@@ -18,7 +18,7 @@ Oddly, the TA7698AP data sheet recommends a supply voltage of 12 V, and says the
 
 All diodes specified to be 1SS133 in the CX60 schematic are, here, parts marked "48T" around their barrel, or some cyclic permutation thereof (don't know where the start and end of the sequence are).  I believe they are 1N4148 equivalent.
 
-The diode (D405) used to rectify the 90 V supply for the CRT socket board has burned the PCB.  That's the only place on the PCB with evidence of heat, the only indication of a component that needed to handle more power than it was rated for.  I don't know what the diode is, I can't make heads or tails of the markings on it ("K4K4"), but I want to choose something else.  The diode seems healthy, so my plan is to re-use it, then with it in circuit measure the current and voltage it needs to handle, and replace it with something beefier that doesn't get as hot.
+The diode (D405) used to rectify the 90 V supply for the CRT socket board has burned the PCB.  That's the only place on the PCB with evidence of heat, the only indication of a component that needed to handle more power than it was rated for.  I don't know what the diode is, I can't make heads or tails of the markings on it ("K4K4"), but I want to choose something else.  The diode seems healthy, so my plan is to re-use it, then with it in circuit measure the current and voltage it needs to handle, and replace it with something beefier that doesn't get as hot.  The CX60 used an ISR124-400A which is a 400 V 1 A high-speed rectifier diode.
 
 In the CX60 schematic the horizontal pulse signal providing a phase sense feedback from the horizontal fly-back circuit feeds into four portions of the circuit:
 1. a circuit to derive a horizontal blanking signal that gets mixed into the luminance;
@@ -34,14 +34,40 @@ I've decided to assume the reference circuit is correct, the diode does not need
 
 All of the normal inductors I've managed to measure and document, but there are two that I don't know what to make of.
 
-There is a tunable inductor thingy connected to the TA7698AP'S "burst cleaning" pin, it's marked KRFE204, and the circuit diagrams suggest it's a capacitor and variable inductor in parallel inside a single box.  The package I have has 5 pins, not including the tabs on the shield surrounding it, and only 2 of the 5 are used, the rest are all grounded.  I don't know what its parameters are or what it is exactly.  I'm reusing the one I pulled out of the TV, and will reconnect it the way it was hooked up.  Looking at the chip's block diagram, the various schematics, and considering what the pin description says about it, I /believe/ you're supposed to connect a DC-isolated LC band-reject filter to pin 10 that is tuned to the colour sub-carrier frequency (~3.58 MHz for NTSC) and that shunts everything away from its centre frequency to ground.  The pin description says the LC tank circuit's alignment can be used to shift the phase of the chroma signal w.r.t. the colour burst phase reference.  So ... I think you should look for a 3.58 MHz tunable LC circuit in a can which is to be deliberately mistuned slightly to provide a phase shift and tweak the colours.  I am expecting to adjust it by putting the tint control in the centre, and tweaking the inductor until the colours look right.  There are instructions in the CX60ME manual for adjusting this component (which it calls a transfomer), but I don't yet know if they to this circuit because of the differences in NTSC chroma processing.
+There is a tunable inductor thingy connected to the TA7698AP'S "burst cleaning" pin.  The package is marked KRFE204, and the circuit diagrams suggest it's a capacitor and variable inductor in parallel inside a single box.  The package I have has 5 pins, not including the tabs on the shield surrounding it, and only 2 of the 5 are used, the rest are all grounded.  I don't know what its parameters are or what it is exactly.  I'm reusing the one I pulled out of the TV, and will reconnect it the way it was hooked up.  Looking at the chip's block diagram, the various schematics, and considering what the pin description says about it, I /believe/ you're supposed to connect a DC-isolated LC band-reject filter to pin 10 that is tuned to the colour sub-carrier frequency (~3.58 MHz for NTSC) and that shunts everything away from its centre frequency to ground.  The pin description says the LC tank circuit's alignment can be used to shift the phase of the chroma signal w.r.t. the colour burst phase reference.  So ... I think you should look for a 3.58 MHz tunable LC circuit in a can which is to be deliberately mistuned slightly to provide a phase shift and tweak the colours.  I am expecting to adjust it by putting the tint control in the centre, and tweaking the inductor until the colours look right.  There are instructions in the CX60ME manual for adjusting this component (which it calls a transformer), but I don't yet know if they work for this circuit because of the differences in NTSC chroma processing.
 
-There is also a transformer used to drive the hoirzontal output transistor.  Televisions seem to always include such a transformer, I don't really understand why, and so I don't know what this thing's properties are supposed to be.  I'm reusing the one I pulled out of the TV and connecting it up the way I found it.
+There is also a transformer used to drive the horizontal output transistor.  Televisions seem to always include such a transformer, I don't really understand why, and so I don't know what this thing's properties are supposed to be.  I'm reusing the one I pulled out of the TV and connecting it up the way I found it.  Measuring this transformer:
+ - grounded pins 2 and 4 (signal generator and oscilloscope chassis);
+ - placed 15 kHz sine wave into pin 1, measured it to be 1 V peak-to-peak using 1 MOhm oscilloscope probe in parallel across winding;
+ - simultaneously observed 250 mV peak-to-peak sine wave in phase on pin 3 with a second 1 MOhm oscilloscope probe across the winding;
+ - with the ground lead for the probe on the secondary disconnected the amplitude increased to 1 V peak-to-peak.
+ - the primary is measured to be 11 mH at 10 kHz with the secondary open, and 0.93 mH with the secondary shorted.
+
+The two ferrite beads, L401 and L409, are 0.12 uH at 100 kHz.
 
 ## Resistors
 
-- All variable resistors measured consistenly 20% below their marked value.
+- All variable resistors measured consistently 20% below their marked value.
 - All blue resistors had drifted upwards, all were consistently measured 10% above their marked value.
+
+## Transistors
+
+### 2SC200
+
+Can't find a manufacturer's datasheet for the 2SC200 transistor, Q401, used to drive the horizontal output transformer.  Web sites that claim to have data for this part contradict each other.  What I have found:
+ - A contemporary transistor parameter table lists it as a Fujitsu part having RF conversion mixer, oscillator and power amplifier applications, states the collector-base breakdown voltage is 40 V, the max collector current is 300 mA, the max dissipated power is 600 mW, max junction temperature is 175 C, the transition frequency is 350 MHz, and the current gain is 60.
+ - A contemporary cross-reference table says the 2SC200 can be replaced with:  2SC1175, 2SC594, 2SC138, 2SC139, 2SC696, 2SC741
+ - The CX60 uses a 2SD639-Q or -R for its Q501, the equivalent in its circuit.  Those have:  collector-base breakdown voltage of 60 V, collector-emitter breakdown voltage of 50 V, max collector current 500 mA, max dissipated power 600 mW, max temperature 150 C, transition frequency of 200 MHz, and a current gain between 85 and 240.
+ - One web site claims the transistor has a collector emitter breakdown voltage of 45 V, a max collector current of 0.5 A, dissipates a maximum of 0.625 W, has a transition frequency of 300 MHz, and that the Y rating will have a current gain between 120 and 240.
+ - That site claims it can be replaced with:  2SC2274, 2SC2274K, 2SC2277, 2SC2655, 2SC3243, 2SC3328, 2SC3916, 2SC3917, 2SC3918, 2SC3919, 2SC3920, 2SC3921, 2SC3922, 2SC3923, 2SD438, 2SD667, 2SD863, BC635, KSC1008C, KSC2331, KTC200, KTC3209 or KTD863.
+ - Another web site claims it has a collector base breakdown voltage of 40 V, a max collector current of 0.3 A, dissipates a maximum of 0.65 W, has a transition frequency of 175 MHz, and a current gain of 60 (regardless of rating).
+ - 2N5551, 2SCR514R might be suitable modern replacements
+
+## Delay Line
+
+I have no idea what this is.  "Sangshin DL601T" is written on it, but I can't find any information on that.  The CX60 schematic isn't helpful because that's for a PAL/SECAM television which would need a different component here.  The TDA7698AP reference circuit shows a TRF2033 or TRP2033 (bad scan) used in this part of the circuit, and I can't find any information about that on the internet.  The schematic calls it a 3.58 MHz trap, and the block diagram suggests it is an LC band reject filter combined with a delay line.
+
+I tried injecting a 100 mV sine wave into pin 1, grounding pin 2, looking at the output on pin 3, and sweeping the frequency between 1 MHz and 5 MHz.  It definitely seems to be a filter, but my quickie hack wasn't enough to get a sense of what kind it is.  However, if it's also a delay line that's hard to tell.  At low frequencies, below 100 kHz, there's no obvious phase difference, no time delay between the input and output signals.  Increasing the frequency reveals a frequency dependent phase shift but not one that corresponds to a fixed time delay.  Injecting, instead, a square wave produces long ringing tails on each transition.  In the circuit, it has a 10 V DC bias across it, between both its input and output and the ground pin.  I wonder if that's needed to make it work.  There might be active circuitry inside it.
 
 ## Other Similar Televisions
 
