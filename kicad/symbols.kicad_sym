@@ -1573,18 +1573,6 @@
 			)
 			(polyline
 				(pts
-					(xy -3.81 -3.81) (xy -3.81 -2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy -2.54 2.54) (xy -2.54 2.54)
 				)
 				(stroke
@@ -2254,7 +2242,7 @@
 			(pin input line
 				(at -24.13 -50.8 0)
 				(length 2.54)
-				(name "AFC_FILTER_1"
+				(name "APC_FILTER_1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2290,7 +2278,7 @@
 			(pin input line
 				(at -24.13 -71.12 0)
 				(length 2.54)
-				(name "AFC_FILTER_2"
+				(name "APC_FILTER_2"
 					(effects
 						(font
 							(size 1.27 1.27)

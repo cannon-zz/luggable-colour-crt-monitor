@@ -18,6 +18,10 @@ Oddly, the TA7698AP data sheet recommends a supply voltage of 12 V, and says the
 
 All diodes specified to be 1SS133 in the CX60 schematic are, here, parts marked "48T" around their barrel, or some cyclic permutation thereof (don't know where the start and end of the sequence are).  I believe they are 1N4148 equivalent.
 
+D303 that does something I don't understand for the vertical deflection coil's high-side drive transistor is a 1SR35-100A in the CX60 schematic, and I don't know what's installed in the SKYTEK.  The 1SR35-100A datasheet is easy to find, but the part isn't.  I'll use a 1N4935.
+
+D404 is a TVR06D, and D408 is an RGP10G.  These can also both be replaced with 1N4935.  I'll order extra 1N4935s, but to start I'll reuse the parts for these I have.
+
 The diode (D405) used to rectify the 90 V supply for the CRT socket board has burned the PCB.  That's the only place on the PCB with evidence of heat, the only indication of a component that needed to handle more power than it was rated for.  I don't know what the diode is, I can't make heads or tails of the markings on it ("K4K4"), but I want to choose something else.  The diode seems healthy, so my plan is to re-use it, then with it in circuit measure the current and voltage it needs to handle, and replace it with something beefier that doesn't get as hot.  The CX60 used an ISR124-400A which is a 400 V 1 A high-speed rectifier diode.
 
 In the CX60 schematic the horizontal pulse signal providing a phase sense feedback from the horizontal fly-back circuit feeds into four portions of the circuit:
@@ -68,6 +72,18 @@ Can't find a manufacturer's datasheet for the 2SC200 transistor, Q401, used to d
 I have no idea what this is.  "Sangshin DL601T" is written on it, but I can't find any information on that.  The CX60 schematic isn't helpful because that's for a PAL/SECAM television which would need a different component here.  The TDA7698AP reference circuit shows a TRF2033 or TRP2033 (bad scan) used in this part of the circuit, and I can't find any information about that on the internet.  The schematic calls it a 3.58 MHz trap, and the block diagram suggests it is an LC band reject filter combined with a delay line.
 
 I tried injecting a 100 mV sine wave into pin 1, grounding pin 2, looking at the output on pin 3, and sweeping the frequency between 1 MHz and 5 MHz.  It definitely seems to be a filter, but my quickie hack wasn't enough to get a sense of what kind it is.  However, if it's also a delay line that's hard to tell.  At low frequencies, below 100 kHz, there's no obvious phase difference, no time delay between the input and output signals.  Increasing the frequency reveals a frequency dependent phase shift but not one that corresponds to a fixed time delay.  Injecting, instead, a square wave produces long ringing tails on each transition.  In the circuit, it has a 10 V DC bias across it, between both its input and output and the ground pin.  I wonder if that's needed to make it work.  There might be active circuitry inside it.
+
+## Connectors
+
+The 4 pin and 5 pin connectors for the CRT socket board are, I think, KK series connectors.  kicad doesn't have footprints for them, so I just picked some 2.5 mm pitch footprints that looked to have about the right size outline.
+
+## Capacitors
+
+The 1 uF 50 V capacitors C205, C401, C408, C409, C503 can all be rated for much less than 50 V.  I found 25 V MLCC capacitors in 2012mm packages to use instead of electrolytics.
+
+C208 the 10 uF 50 V filter capacitor for brightness can be reduced to 16 V rating and replaced with an MLCC in a 2012 package.
+
+For the rest, some were cheaper to buy in 1608 (metric) sizes than the 2012 size that I had thought I'd standardize on.  I decided not to change the footprints for those parts because 1608s can be soldered onto 2012 pads and this way there's maybe more flexibility for changing values if needed.
 
 ## Other Similar Televisions
 
