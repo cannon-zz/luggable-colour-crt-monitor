@@ -47,25 +47,48 @@ There is also a transformer used to drive the horizontal output transistor.  Tel
  - with the ground lead for the probe on the secondary disconnected the amplitude increased to 1 V peak-to-peak.
  - the primary is measured to be 11 mH at 10 kHz with the secondary open, and 0.93 mH with the secondary shorted.
 
-The two ferrite beads, L401 and L409, are 0.12 uH at 100 kHz.
+For the two ferrite beads, L401 and L409, using a dual binding post to BNC adapter + BNC to SMA adapter, I used a NanoVNA to try to characterize these.  If the measurements I made are correct, below 30 MHz these have almost 0 Ohm impedance, above 30 MHz they begin to absorb, and have a peak absoption at about 160 MHz.
 
 ## Resistors
 
-- All variable resistors measured consistently 20% below their marked value.
-- All blue resistors had drifted upwards, all were consistently measured 10% above their marked value.
+All blue resistors had drifted upwards, all were consistently measured 10% above their marked value.
+
+### Variable resistors
+
+All variable resistors measured consistently 20% below their marked value.  The fact that the deviation is systematic points to a manufacturing flaw, but normal non-precision variable resistors usually only have a 20% or even 30% tolerance, so these would probably all be within the manufacturer's specifications.  Nevertheless I'll replace them all.
+
+Some are hard to source:
+- 470 Ohm vertical centre.  with no load on wiper, wiper potential varies from 3.5 V to 9.1 V, or 32% to 83% of the deflection potential.  in the CX60 circuit, with different resistances and the vertical deflection running on 17 V, the unloaded wiper's potential varies from 6.3 V to 12.6 V, or 37% to 74% of the deflection potential.
+- 200 kOhm vertical hold
+
+Easy to obtain locally are Alps Alpine RK09K series potentiometers.  for the three 10 kOhm, non-detent, pots I got RK09L1140-F15-C0-B103:
+- 15 mm from body to top of shaft
+- 5 mm M9x0.75 threaded sleeve
+- 6 mm flat D shaft
+- 300 degree rotation
+- pins comatible with 2.54 mm grid
+- 10 mm from PCB to front-panel mating surface
+- 50 mW
+Mouser has the centre detent version RK09L114001E
+
+TT Electronics P0915N-FCxxx are nearly mechanically compatible, but have an M7x0.75 threaded shaft.  there isn't a 200 kOhm variant.
+
+settled on Bourns PDB12-F4201-204BF for the 200 kOhm vertical hold adjustment.  this is larger, physically, than the others, does not have a threaded bushing, but its PCB to front-panel mating surface height is nearly the same at 9 mm, however the total length is about 5 mm shorter from PCB surface to end of shaft.  hopefully the difference won't be noticed once knobs get pushed onto the shafts.
+
+it would be much more convenient if the vertical hold adjustment R351 could be implemented with a 100 kOhm pot.  upping R306 to 270 kOhm and adding a 50 kOhm resistor in series after R351 would allow R351 to be reduced to 100 kOhm without changing the total series resistance, but it would cut the adjustment range in half.
 
 ## Transistors
 
 ### 2SC200
 
-Can't find a manufacturer's datasheet for the 2SC200 transistor, Q401, used to drive the horizontal output transformer.  Web sites that claim to have data for this part contradict each other.  What I have found:
+Can't find a manufacturer's datasheet for the 2SC200 transistor, Q401, the NPN used to drive the horizontal output transformer.  Web sites that claim to have data for this part contradict each other.  What I have found:
  - A contemporary transistor parameter table lists it as a Fujitsu part having RF conversion mixer, oscillator and power amplifier applications, states the collector-base breakdown voltage is 40 V, the max collector current is 300 mA, the max dissipated power is 600 mW, max junction temperature is 175 C, the transition frequency is 350 MHz, and the current gain is 60.
  - A contemporary cross-reference table says the 2SC200 can be replaced with:  2SC1175, 2SC594, 2SC138, 2SC139, 2SC696, 2SC741
  - The CX60 uses a 2SD639-Q or -R for its Q501, the equivalent in its circuit.  Those have:  collector-base breakdown voltage of 60 V, collector-emitter breakdown voltage of 50 V, max collector current 500 mA, max dissipated power 600 mW, max temperature 150 C, transition frequency of 200 MHz, and a current gain between 85 and 240.
- - One web site claims the transistor has a collector emitter breakdown voltage of 45 V, a max collector current of 0.5 A, dissipates a maximum of 0.625 W, has a transition frequency of 300 MHz, and that the Y rating will have a current gain between 120 and 240.
+ - One non-contemporary web site claims the transistor has a collector emitter breakdown voltage of 45 V, a max collector current of 0.5 A, dissipates a maximum of 0.625 W, has a transition frequency of 300 MHz, and that the Y rating will have a current gain between 120 and 240.
  - That site claims it can be replaced with:  2SC2274, 2SC2274K, 2SC2277, 2SC2655, 2SC3243, 2SC3328, 2SC3916, 2SC3917, 2SC3918, 2SC3919, 2SC3920, 2SC3921, 2SC3922, 2SC3923, 2SD438, 2SD667, 2SD863, BC635, KSC1008C, KSC2331, KTC200, KTC3209 or KTD863.
- - Another web site claims it has a collector base breakdown voltage of 40 V, a max collector current of 0.3 A, dissipates a maximum of 0.65 W, has a transition frequency of 175 MHz, and a current gain of 60 (regardless of rating).
- - 2N5551, 2SCR514R might be suitable modern replacements
+ - Another non-contemporary web site claims it has a collector base breakdown voltage of 40 V, a max collector current of 0.3 A, dissipates a maximum of 0.65 W, has a transition frequency of 175 MHz, and a current gain of 60 (regardless of rating).
+ - 2N5551, 2SCR514R might be suitable modern replacements, or maybe just a 2N2222
 
 ## Delay Line
 
