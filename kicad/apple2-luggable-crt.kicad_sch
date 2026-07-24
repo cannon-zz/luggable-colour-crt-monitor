@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "SKYTEK SCT-1024")
-		(comment 1 "Video Section")
+		(comment 1 "Video Section (RF section not shown)")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
@@ -507,6 +507,135 @@
 					(at 0 0 90)
 					(length 2.54)
 					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x01"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3519,6 +3648,159 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:Heatsink_Pad_2Pin"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "HS"
+				(at 0 5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Heatsink_Pad_2Pin"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.3048 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0.3048 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Heatsink with electrical connection, 2 pin"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "thermal heat temperature"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Heatsink_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Heatsink_Pad_2Pin_0_1"
+				(polyline
+					(pts
+						(xy -0.3302 0) (xy -0.9652 0) (xy -0.9652 2.54) (xy -1.6002 2.54) (xy -1.6002 0) (xy -2.2352 0)
+						(xy -2.2352 2.54) (xy -2.8702 2.54) (xy -2.8702 -1.27) (xy -0.9652 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3302 0) (xy -0.3302 2.54) (xy 0.3048 2.54) (xy 0.3048 0) (xy 0.9398 0) (xy 0.9398 2.54)
+						(xy 1.5748 2.54) (xy 1.5748 0) (xy 2.2098 0) (xy 2.2098 2.54) (xy 2.8448 2.54) (xy 2.8448 -1.27)
+						(xy -0.9652 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Heatsink_Pad_2Pin_1_1"
+				(pin passive line
+					(at -2.54 -2.54 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 90)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -8350,6 +8632,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "BOARD MOUNTING HOLES"
+		(exclude_from_sim no)
+		(at 315.468 33.528 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "62279182-d7bd-42a0-a46e-63a8628079c8")
+	)
 	(text "R300 = BOARD MOD"
 		(exclude_from_sim no)
 		(at 205.74 74.422 0)
@@ -8359,6 +8651,16 @@
 			)
 		)
 		(uuid "87f39d59-aa6e-4991-a590-edc81485da57")
+	)
+	(text "MOUNTING HOLES FOR FLYBACK SHIELD"
+		(exclude_from_sim no)
+		(at 297.688 196.342 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fe3d6e73-0e59-428d-9c8c-faa8e156f454")
 	)
 	(text_box "CW"
 		(exclude_from_sim no)
@@ -8435,25 +8737,6 @@
 			)
 		)
 		(uuid "2e4b8ef2-9211-451f-ab11-f78d10f83daf")
-	)
-	(text_box "90V"
-		(exclude_from_sim no)
-		(at 344.17 238.76 0)
-		(size 3.81 2.54)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-		)
-		(uuid "33d16242-2aac-4f2e-a5fe-b59c691a2950")
 	)
 	(text_box "PICTURE CONTROL BOARD CONNECTORS"
 		(exclude_from_sim no)
@@ -8607,25 +8890,6 @@
 			)
 		)
 		(uuid "99906908-84c0-4102-880f-238206626bc0")
-	)
-	(text_box "HEATER ACV"
-		(exclude_from_sim no)
-		(at 336.55 226.06 0)
-		(size 11.43 2.54)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-		)
-		(uuid "9e9a5784-1566-4310-8ea5-b5af48b0dab5")
 	)
 	(text_box "4.8V"
 		(exclude_from_sim no)
@@ -9288,12 +9552,6 @@
 		(uuid "a55f1184-b681-411e-aeaf-650080ca5ada")
 	)
 	(junction
-		(at 346.71 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5da9471-0718-4bae-a5db-74ac0d26007a")
-	)
-	(junction
 		(at 105.41 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9474,6 +9732,12 @@
 		(uuid "d5d9b178-1a7e-46ff-bd38-7819669ca804")
 	)
 	(junction
+		(at 346.71 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6434960-31f9-4c1e-a0c0-06b2ce83b488")
+	)
+	(junction
 		(at 179.07 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9490,6 +9754,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8c8820a-723f-475c-ae2b-a508976c414f")
+	)
+	(junction
+		(at 290.83 250.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9f16626-b4f6-454f-8f66-b7a39926a043")
 	)
 	(junction
 		(at 350.52 115.57)
@@ -9786,6 +10056,16 @@
 			(type default)
 		)
 		(uuid "0b5da12b-18c5-4972-a779-2b93eb01ecfd")
+	)
+	(wire
+		(pts
+			(xy 332.74 22.86) (xy 346.71 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b889fd8-6444-44a1-9244-d936df6adaf7")
 	)
 	(wire
 		(pts
@@ -14139,16 +14419,6 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 22.86) (xy 346.71 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc98ce4e-1d90-4b35-b9aa-fed3d1e0ff3b")
-	)
-	(wire
-		(pts
 			(xy 50.8 233.68) (xy 50.8 234.95)
 		)
 		(stroke
@@ -14337,6 +14607,16 @@
 		)
 		(uuid "242eaccc-6f6f-4cc7-b128-f593253e41a2")
 	)
+	(label "90V"
+		(at 346.71 237.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "27425406-b825-4937-bbb3-97bf885ef25a")
+	)
 	(label "H. PULSE"
 		(at 105.41 26.67 270)
 		(effects
@@ -14346,6 +14626,16 @@
 			(justify right bottom)
 		)
 		(uuid "2b234db1-b243-44e7-b31d-1b08cba371e4")
+	)
+	(label "12 V UNREG"
+		(at 332.74 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3077c5ef-8568-4410-a2d9-a0376bc5dd77")
 	)
 	(label "V HOLD"
 		(at 179.07 53.34 270)
@@ -14406,6 +14696,16 @@
 			(justify left bottom)
 		)
 		(uuid "47534b4d-c0e2-449d-8be2-e409de3b5b21")
+	)
+	(label "HEATER ACV"
+		(at 347.98 229.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4bfc036d-d499-451a-bd8e-93b8079e26a3")
 	)
 	(label "B-Y"
 		(at 271.78 91.44 180)
@@ -14748,6 +15048,114 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 316.23 237.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1aaedb53-032e-4e5b-ab23-1f22bfe33d83")
+		(property "Net Class" "High Voltage"
+			(at 316.9285 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -63.5 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 219.71 214.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7f8da3e-f36b-437f-98ff-3795874ce8f6")
+		(property "Net Class" "High Voltage"
+			(at 220.4085 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -160.02 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 278.13 246.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d5c5f4e5-53cb-4c7f-a486-f6623fc5667c")
+		(property "Net Class" "High Voltage"
+			(at 278.8285 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -101.6 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
 			)
 		)
 	)
@@ -15695,7 +16103,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 339.09 25.4 0)
+		(at 332.74 25.4 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -15706,7 +16114,7 @@
 		(dnp no)
 		(uuid "06cfee11-8b8e-4aec-aa49-92c0b6de1947")
 		(property "Reference" "#PWR0137"
-			(at 339.09 30.48 0)
+			(at 332.74 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15717,7 +16125,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 339.217 29.21 0)
+			(at 332.867 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15728,7 +16136,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 339.09 26.67 0)
+			(at 332.74 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15739,7 +16147,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 339.09 26.67 0)
+			(at 332.74 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15750,7 +16158,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 339.09 25.4 0)
+			(at 332.74 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16072,7 +16480,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 288.036 147.066 90)
+			(at 288.798 147.066 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20016,7 +20424,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 334.01 22.86 0)
+		(at 327.66 22.86 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -20027,7 +20435,7 @@
 		(dnp no)
 		(uuid "2aef7b02-9731-450c-9bd9-1ea9a00670b4")
 		(property "Reference" "J801"
-			(at 334.01 16.764 0)
+			(at 327.66 16.764 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20037,7 +20445,7 @@
 			)
 		)
 		(property "Value" "12V UNREG"
-			(at 334.01 19.304 0)
+			(at 327.66 19.304 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20046,8 +20454,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal"
-			(at 334.01 22.86 0)
+		(property "Footprint" "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical"
+			(at 327.66 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20058,7 +20466,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 334.01 22.86 0)
+			(at 327.66 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20069,7 +20477,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 334.01 22.86 0)
+			(at 327.66 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21479,6 +21887,88 @@
 			(project "apple2-luggable-crt"
 				(path "/b139b959-2b3e-49ad-9a77-d02564fe1a08"
 					(reference "R524")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad_2Pin")
+		(at 185.42 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3374cd45-76ed-46eb-b80a-d7b95604b1d5")
+		(property "Reference" "HS1"
+			(at 178.308 231.902 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Heatsink_Pad_2Pin"
+			(at 189.23 234.3149 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.7248 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.7248 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 2 pin"
+			(at 185.42 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e5af13a8-3989-4468-b1f4-d79a44877d1b")
+		)
+		(pin "2"
+			(uuid "f13e7721-e66b-4e46-8a74-3bb58aaaf8db")
+		)
+		(instances
+			(project "apple2-luggable-crt"
+				(path "/b139b959-2b3e-49ad-9a77-d02564fe1a08"
+					(reference "HS1")
 					(unit 1)
 				)
 			)
@@ -23120,7 +23610,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M3"
+		(property "Value" "M4"
 			(at 321.31 39.3699 0)
 			(hide yes)
 			(show_name no)
@@ -23132,7 +23622,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_TopBottom"
 			(at 318.77 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -23796,6 +24286,7 @@
 		)
 		(property "Description" "Potentiometer, US symbol"
 			(at 48.514 241.808 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24743,6 +25234,85 @@
 			(project "apple2-luggable-crt"
 				(path "/b139b959-2b3e-49ad-9a77-d02564fe1a08"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 295.91 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a7dc715-3a87-49cd-b0d9-9a2aa5245fbe")
+		(property "Reference" "J2"
+			(at 298.45 247.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FOC. SCN. RET."
+			(at 298.45 250.1899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 295.91 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 295.91 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 295.91 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "93013549-7615-4791-9ebf-a32b4afd39e2")
+		)
+		(instances
+			(project "apple2-luggable-crt"
+				(path "/b139b959-2b3e-49ad-9a77-d02564fe1a08"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -31588,6 +32158,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDPWR")
+		(at 187.96 236.22 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "831e2b94-55de-461a-9c92-c625ba5bceb5")
+		(property "Reference" "#PWR0138"
+			(at 187.96 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 188.087 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 187.96 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "db974879-960d-427e-a9eb-f22540cc0f6b")
+		)
+		(instances
+			(project "apple2-luggable-crt"
+				(path "/b139b959-2b3e-49ad-9a77-d02564fe1a08"
+					(reference "#PWR0138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 330.2 59.69 90)
 		(mirror x)
@@ -31840,6 +32489,85 @@
 			(project "apple2-luggable-crt"
 				(path "/b139b959-2b3e-49ad-9a77-d02564fe1a08"
 					(reference "SW201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 182.88 236.22 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "85c8029e-b743-4c9e-878a-712bd5d22a7d")
+		(property "Reference" "#PWR086"
+			(at 182.88 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 183.007 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 182.88 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8892d1e0-becd-441f-82fb-ae126e4bb698")
+		)
+		(instances
+			(project "apple2-luggable-crt"
+				(path "/b139b959-2b3e-49ad-9a77-d02564fe1a08"
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -32865,7 +33593,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8c65fe21-6bb1-4d45-b9bc-a526f3b71a6c")
-		(property "Reference" "RV14"
+		(property "Reference" "R129"
 			(at 267.97 75.692 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32929,7 +33657,7 @@
 		(instances
 			(project "apple2-luggable-crt"
 				(path "/b139b959-2b3e-49ad-9a77-d02564fe1a08"
-					(reference "RV14")
+					(reference "R129")
 					(unit 1)
 				)
 			)
@@ -37092,7 +37820,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M3"
+		(property "Value" "M4"
 			(at 313.69 39.3699 0)
 			(hide yes)
 			(show_name no)
@@ -37104,7 +37832,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_TopBottom"
 			(at 311.15 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -37251,7 +37979,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M3"
+		(property "Value" "M4"
 			(at 306.07 39.3699 0)
 			(hide yes)
 			(show_name no)
@@ -37263,7 +37991,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_TopBottom"
 			(at 303.53 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -39090,7 +39818,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M3"
+		(property "Value" "M4"
 			(at 328.93 39.3699 0)
 			(hide yes)
 			(show_name no)
@@ -39102,7 +39830,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_TopBottom"
 			(at 326.39 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -43529,7 +44257,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 341.63 41.91 0)
+		(at 275.59 198.12 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -43540,7 +44268,7 @@
 		(dnp no)
 		(uuid "ea0ded09-fa45-47d2-9059-6dc04030bc43")
 		(property "Reference" "#PWR0134"
-			(at 341.63 46.99 0)
+			(at 275.59 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43551,7 +44279,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 341.757 45.72 0)
+			(at 275.717 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43562,7 +44290,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 341.63 43.18 0)
+			(at 275.59 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43573,7 +44301,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 341.63 43.18 0)
+			(at 275.59 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43584,7 +44312,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 341.63 41.91 0)
+			(at 275.59 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45403,7 +46131,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 341.63 39.37 0)
+		(at 275.59 195.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -45414,7 +46142,7 @@
 		(fields_autoplaced yes)
 		(uuid "f4cc5176-2826-4601-be2d-9521cdd81d1b")
 		(property "Reference" "H6"
-			(at 344.17 36.8299 0)
+			(at 278.13 193.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -45425,7 +46153,7 @@
 			)
 		)
 		(property "Value" "M3"
-			(at 344.17 39.3699 0)
+			(at 278.13 195.5799 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45436,8 +46164,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
-			(at 341.63 39.37 0)
+		(property "Footprint" "foodprints:MountingHole_3.2mm_M3_Pad_TopBottom_flyback_shield"
+			(at 275.59 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45448,7 +46176,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 341.63 39.37 0)
+			(at 275.59 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45459,7 +46187,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 341.63 39.37 0)
+			(at 275.59 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45483,7 +46211,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 334.01 41.91 0)
+		(at 267.97 198.12 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -45494,7 +46222,7 @@
 		(dnp no)
 		(uuid "f50bb761-c88c-4838-ba0c-937d0d9a8fae")
 		(property "Reference" "#PWR0133"
-			(at 334.01 46.99 0)
+			(at 267.97 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45505,7 +46233,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 334.137 45.72 0)
+			(at 268.097 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45516,7 +46244,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 334.01 43.18 0)
+			(at 267.97 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45527,7 +46255,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 334.01 43.18 0)
+			(at 267.97 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45538,7 +46266,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 334.01 41.91 0)
+			(at 267.97 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46355,7 +47083,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 334.01 39.37 0)
+		(at 267.97 195.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -46366,7 +47094,7 @@
 		(fields_autoplaced yes)
 		(uuid "fbdfc0bd-8d76-425f-9135-bc20924e23dc")
 		(property "Reference" "H5"
-			(at 336.55 36.8299 0)
+			(at 270.51 193.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -46377,7 +47105,7 @@
 			)
 		)
 		(property "Value" "M3"
-			(at 336.55 39.3699 0)
+			(at 270.51 195.5799 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46388,8 +47116,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
-			(at 334.01 39.37 0)
+		(property "Footprint" "foodprints:MountingHole_3.2mm_M3_Pad_TopBottom_flyback_shield"
+			(at 267.97 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46400,7 +47128,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 334.01 39.37 0)
+			(at 267.97 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46411,7 +47139,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 334.01 39.37 0)
+			(at 267.97 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
