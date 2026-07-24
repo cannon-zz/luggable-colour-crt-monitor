@@ -62177,7 +62177,7 @@
 		(uuid "0ad81d7a-0a7d-4ea2-9292-a39d32f5e644")
 	)
 	(gr_text "https://github.com/cannon-zz/luggable-colour-crt-monitor.git"
-		(at 122.287616 152.512988 0)
+		(at 130.155159 152.111993 0)
 		(layer "B.SilkS")
 		(uuid "84a9b91c-a6be-4203-a5da-121c0f2dc3ae")
 		(effects
@@ -62200,6 +62200,32 @@
 				(bold yes)
 			)
 			(justify bottom mirror)
+		)
+	)
+	(gr_text "REV A"
+		(at 91.039159 152.111993 0)
+		(layer "B.SilkS")
+		(uuid "4cfec76d-230a-4313-81de-6fbf2e968caa")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "REV A"
+		(at 132.695159 59.655993 0)
+		(layer "B.SilkS")
+		(uuid "53f2e3a0-0560-4411-98ed-e880288ef789")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom mirror)
 		)
 	)
 	(dimension
