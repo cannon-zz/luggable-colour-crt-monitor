@@ -21926,7 +21926,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "foodprints:Heatsink_TO-220_26x20mm_2xFixation1.2mm"
 			(at 185.7248 234.95 0)
 			(hide yes)
 			(show_name no)
