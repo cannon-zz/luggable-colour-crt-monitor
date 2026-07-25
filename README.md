@@ -12,6 +12,9 @@ This monitor started out as a SKYTEK brand SCT-1024 portable colour television f
 - [X] Remove components from PCB, confirm values out-of-circuit.
   - Confirm internal structure of flyback.
   - Identify coils, diodes, capacitors.
-- [ ] Select new replacement parts.
-- [ ] Assign footprints.
-- [ ] Layout PCB.
+- [X] Select new replacement parts.
+- [X] Assign footprints.
+- [X] Layout PCB.
+- [X] Parts and PCBs ordered.
+- [ ] Assembled.
+- [ ] Tested and working (knock on wood).
